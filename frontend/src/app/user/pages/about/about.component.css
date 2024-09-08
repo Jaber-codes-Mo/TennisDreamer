@@ -1,0 +1,385 @@
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .about-page {
+    padding: 50px 0;
+  }
+  
+  .text-with-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .logo-container {
+    margin-right: 20px;
+  }
+  
+  .logo-img {
+    height: 120px;
+    width: auto;
+  }
+  
+  .text-content {
+    max-width: 800px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .intro-text {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .card-container {
+    margin: 40px 0;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    min-height: 100%;
+    height: 100%;
+  }
+  
+  .card-header {
+    background-color: #003366;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .card-header i {
+    margin-right: 10px;
+  }
+  
+  .card-title {
+    color: #003366;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .mission-list, .services-list {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  .mission-list li, .services-list li {
+    list-style-type: disc;
+    margin-bottom: 10px;
+  }
+  
+  .community-section {
+    background-color: #003366;
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .community-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  .community-section i {
+    margin-right: 10px;
+  }
+  
+  .vbar {
+    background-color: #f8f9fa;
+    padding: 0 1rem;
+  }
+  
+  .navbar-brand img {
+    height: 60px;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-brand img:hover {
+    transform: scale(1.1);
+  }
+  
+  .navbar-nav .nav-link {
+    color: #333;
+    margin-right: 15px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #003366;
+  }
+  
+  #container {
+    border-radius: 30px;
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: 20px 20px 0px #2E2E2E;
+    margin: 0 auto;
+    background-color: #003366;
+  }
+  
+  .calendrier {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #F6F6F6;
+    border-radius: 15px;
+    padding: 20px;
+  }
+  
+  .calendrier caption {
+    background-color: #D35A33;
+    color: #F6F6F6;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 20px;
+    line-height: 1.2;
+    font-size: 1.7em;
+    font-weight: bold;
+  }
+  
+  .calendrier td, .calendrier th {
+    padding: 1em;
+    font-size: 1em;
+    color: #2E2E2E;
+  }
+  
+  .calendrier td {
+    text-align: center;
+    border-bottom: 1px solid #003366;
+  }
+  
+  .calendrier thead th {
+    text-transform: uppercase;
+    color: #003366;
+    font-weight: 700;
+    padding-top: 1.5em;
+  }
+  
+  .sunday {
+    color: #D35A33;
+  }
+  
+  .huge {
+    display: block;
+    font-size: 2.5em;
+    color: #FFD700;
+  }
+  
+  .current {
+    color: #F6F6F6;
+    background-color: #FFD700;
+    border-radius: 50%;
+    padding: 0.5em 0.7em;
+  }
+  
+  td:hover {
+    color: #FFD700;
+    background-color: #F6F6F6;
+    cursor: pointer;
+  }
+  
+  .day {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    padding: .5em;
+    border-radius: 50%;
+    transition: all .5s;
+  }
+  
+  .day:hover {
+    cursor: pointer;
+    background-color: #FFD700;
+    color: #2E2E2E;
+    border-radius: 0;
+  }
+  
+  .jourj {
+    background-color: #FFD700;
+    color: #2E2E2E;
+    border-radius: 50%;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #003366;
+    color: #FFD700;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #FFD700;
+  }
+  
+  .modal-content p {
+    font-size: 1.1em;
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #FFD700;
+    color: #003366;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #FFD700;
+    color: #003366;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .navbar-toggler .fas {
+    font-size: 24px;
+  }
+  
+  .dropdown-menu {
+    min-width: 200px;
+  }
+  
+  .badge-notification {
+    font-size: 12px;
+  }
+  
+  .dropdown-menu img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .d-flex .link-secondary {
+    margin-left: 10px;
+  }
+  
+  #calendar-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #003366;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .full-calendar {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #F6F6F6;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .fc-header-toolbar {
+    background-color: #003366;
+    color: #FFD700;
+    padding: 10px;
+    border-bottom: 2px solid #FFD700;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .fc-button {
+    background-color: #FFD700;
+    color: #003366;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 0.9em;
+    margin: 0 2px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .fc-button:hover {
+    background-color: #FFD700;
+    color: #003366;
+  }
+  
+  .fc-daygrid-day {
+    position: relative;
+    border-radius: 10px;
+    padding: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .fc-daygrid-day:hover {
+    background-color: #FFD700;
+    color: #003366;
+  }
+  
+  .fc-daygrid-day.fc-day-today {
+    background-color: #FFD700;
+    color: #003366;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .fc-event {
+    background-color: #003366;
+    color: #FFD700;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    margin: 2px 0;
+  }
+  

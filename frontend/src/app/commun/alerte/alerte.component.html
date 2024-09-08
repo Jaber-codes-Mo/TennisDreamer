@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="d-flex">
+      <!-- Logo Section -->
+      <div class="logo-section">
+        <img src="assets/dream.png" alt="Logo" class="logo">
+      </div>
+      
+      <!-- Form Section -->
+      <div class="form-section card">
+        <div class="card-header text-center">
+          <h5>Mot de passe oublié</h5>
+        </div>
+        <div class="card-body">
+          <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <label for="userInput">E-mail ou Numéro de téléphone</label>
+              <input type="text" class="form-control" id="userInput" placeholder="E-mail ou Numéro de téléphone" [(ngModel)]="userInput" name="userInput" required>
+            </div>
+            <div class="text-center"> <!-- Center the button within this div -->
+              <button type="submit" class="btn btn-primary mt-2">Envoyer le code</button>
+            </div>
+          </form>
+          <div class="mt-2 text-center">
+            <a class="text-decoration-none" (click)="navigateToLogin()">Retourner à la connexion</a>
+          </div>
+          <div class="mt-2">
+            <button class="btn btn-secondary w-100" (click)="navigateToInscrit()">Créer nouveau compte</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

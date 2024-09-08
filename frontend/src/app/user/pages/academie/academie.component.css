@@ -1,0 +1,95 @@
+/* En-tête */
+header {
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.header-content {
+    background-color: rgba(0, 0, 0, 0.4); /* Fond semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header-content h1 {
+    font-size: 3rem; /* Taille du texte pour le titre */
+    font-family: 'Montserrat', sans-serif; /* Police pour le titre */
+    font-weight: bold;
+}
+
+.header-content p {
+    font-size: 1.25rem; /* Taille du texte pour le sous-titre */
+    font-family: 'Open Sans', sans-serif; /* Police pour le sous-titre */
+    font-weight: 300; /* Poids léger pour le sous-titre */
+}
+
+/* Section des cartes */
+#features {
+    background-color: #f8f9fa; /* Couleur de fond claire pour la section des cartes */
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-icon {
+    font-size: 3rem; /* Taille des icônes */
+    color: #003366; /* Couleur des icônes */
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.card-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+/* Section de contact */
+#contact {
+    background-color: #f8f9fa; /* Couleur de fond claire pour la section de contact */
+}
+
+#contact h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#contact h2 i {
+    font-size: 2rem; /* Taille des icônes dans le titre */
+    color: #003366; /* Couleur des icônes */
+    margin-right: 0.5rem;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact .form-label i {
+    margin-right: 0.5rem;
+}
+
+#contact .btn-primary {
+    background-color: #003366;
+    border-color: #003366;
+}
+
+/* Pied de page */
+footer {
+    background-color: #2e2e2e;
+}

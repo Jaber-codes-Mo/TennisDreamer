@@ -1,0 +1,107 @@
+<app-navbar></app-navbar>
+<section class="h-100 bg-warning">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+          <div class="card card-registration my-4">
+            <div class="row g-0 h-100">
+              <div class="col-xl-6 d-none d-xl-flex justify-content-center align-items-center">
+                <img src="assets/dream.png"
+                  alt="Photo d'exemple" class="img-fluid"
+                  style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+              </div>
+              <div class="col-xl-6">
+                <div class="card-body p-md-5 text-black">
+                  <h3 class="mb-5 text-uppercase">Faites le premier pas<br> inscrivez-vous </h3>
+  
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div data-mdb-input-init class="form-outline">
+                        <input type="text" id="firstName" class="form-control form-control-lg" />
+                        <label class="form-label" for="firstName">Prénom</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div data-mdb-input-init class="form-outline">
+                        <input type="text" id="lastName" class="form-control form-control-lg" />
+                        <label class="form-label" for="lastName">Nom</label>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="text" id="address" class="form-control form-control-lg" />
+                    <label class="form-label" for="address">Adresse</label>
+                  </div>
+  
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="number" id="age" class="form-control form-control-lg" />
+                    <label class="form-label" for="age">Âge</label>
+                  </div>
+  
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                    <label class="form-label" for="phoneNumber">Numéro de téléphone</label>
+                  </div>
+  
+                  <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+                    <h6 class="mb-0 me-4">Situation : </h6>
+                    <div class="form-check form-check-inline mb-0 me-4">
+                      <input class="form-check-input" type="radio" name="status" id="student" value="student" />
+                      <label class="form-check-label" for="student">Étudiant</label>
+                    </div>
+                    <div class="form-check form-check-inline mb-0 me-4">
+                      <input class="form-check-input" type="radio" name="status" id="employee" value="employee" />
+                      <label class="form-check-label" for="employee">Employé</label>
+                    </div>
+                    <div class="form-check form-check-inline mb-0">
+                      <input class="form-check-input" type="radio" name="status" id="other" value="other" />
+                      <label class="form-check-label" for="other">Autre</label>
+                    </div>
+                  </div>
+  
+                  <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+                    <h6 class="mb-0 me-4">Entraînement dans un autre club précédemment : </h6>
+                    <div class="form-check form-check-inline mb-0 me-4">
+                      <input class="form-check-input" type="radio" name="trainedAtClub" id="yes" value="yes" />
+                      <label class="form-check-label" for="yes">Oui</label>
+                    </div>
+                    <div class="form-check form-check-inline mb-0">
+                      <input class="form-check-input" type="radio" name="trainedAtClub" id="no" value="no" />
+                      <label class="form-check-label" for="no">Non</label>
+                    </div>
+                  </div>
+  
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="number" id="yearsAtPreviousClub" class="form-control form-control-lg" />
+                    <label class="form-label" for="yearsAtPreviousClub">Nombre d'années dans l'ancien club</label>
+                  </div>
+  
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="text" id="cin" class="form-control form-control-lg" />
+                    <label class="form-label" for="cin">CIN</label>
+                  </div>
+  
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="text" id="parentPhoneNumber" class="form-control form-control-lg" />
+                    <label class="form-label" for="parentPhoneNumber">Numéro de téléphone des parents</label>
+                  </div>
+  
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="email" id="email" class="form-control form-control-lg" />
+                    <label class="form-label" for="email">Adresse e-mail</label>
+                  </div>
+  
+                  <div class="d-flex justify-content-center pt-3">
+                    <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn-sayi btn-lg"(click)="navigateToLogin()"> S'inscrire  </button>                  
+                </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

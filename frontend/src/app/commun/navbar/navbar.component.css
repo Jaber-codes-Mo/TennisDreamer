@@ -1,0 +1,43 @@
+.navbar {
+    background-color: #f8f9fa; 
+    padding: 0 1rem; 
+}
+
+.navbar-brand img {
+    height: 60px; 
+    transition: transform 0.3s ease; 
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1); 
+}
+
+.navbar-nav .nav-link {
+    color: #333; 
+    margin-right: 15px; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #003366; 
+}
+
+.navbar-toggler .fas {
+    font-size: 24px; 
+}
+
+.dropdown-menu {
+    min-width: 200px; 
+}
+
+.badge-notification {
+    font-size: 12px; 
+}
+
+.dropdown-menu img {
+    width: 30px; 
+    height: 30px; 
+}
+
+.d-flex .link-secondary {
+    margin-left: 10px; 
+}

@@ -1,0 +1,180 @@
+<app-navbar></app-navbar>
+<!--Main layout-->
+<main style="margin-top: 58px">
+    <div class="container pt-4">
+      
+      <!-- Section: Main chart -->
+      <section class="main-chart mb-4 text-center">
+        <div class="card shadow-sm mx-auto" style="max-width: 80%;">
+          <div class="card-header py-3 bg-dark text-white">
+            <h5 class="mb-0"><strong>Performance des Joueurs</strong></h5>
+          </div>
+          <div class="card-body">
+            <canvas class="my-4 w-100" id="myChart" height="380"></canvas>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Section: Tennis KPIs -->
+      <section class="tennis-kpis mb-4 text-center">
+        <div class="card shadow-sm mx-auto" style="max-width: 80%;">
+          <div class="card-header py-3 bg-dark text-white">
+            <h5 class="mb-0"><strong>Statistiques Clés des Joueurs</strong></h5>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-hover table-bordered text-center">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Matchs Joués</th>
+                    <th scope="col">Matchs Gagnés</th>
+                    <th scope="col">Set</th>
+                    <th scope="col">Jeux</th>
+                    <th scope="col">Points</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Valeur</th>
+                    <td>18,492</td>
+                    <td>228</td>
+                    <td>350</td>
+                    <td>4,787</td>
+                    <td>13.68</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Changement absolu</th>
+                    <td><span class="text-danger"><i class="fas fa-caret-down me-1"></i>-48.8%</span></td>
+                    <td><span class="text-success"><i class="fas fa-caret-up me-1"></i>14.0%</span></td>
+                    <td><span class="text-success"><i class="fas fa-caret-up me-1"></i>46.4%</span></td>
+                    <td><span class="text-success"><i class="fas fa-caret-up me-1"></i>29.6%</span></td>
+                    <td><span class="text-danger"><i class="fas fa-caret-down me-1"></i>-11.5%</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Changement en pourcentage</th>
+                    <td><span class="text-danger"><i class="fas fa-caret-down me-1"></i>-17,654</span></td>
+                    <td><span class="text-success"><i class="fas fa-caret-up me-1"></i>28</span></td>
+                    <td><span class="text-success"><i class="fas fa-caret-up me-1"></i>111</span></td>
+                    <td><span class="text-success"><i class="fas fa-caret-up me-1"></i>1,092.72</span></td>
+                    <td><span class="text-danger"><i class="fas fa-caret-down me-1"></i>-1.78</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Section: Statistics Cards -->
+      <section class="stats-cards">
+        <div class="row text-center justify-content-center">
+          <div class="col-xl-3 col-sm-6 col-12 mb-4">
+            <div class="card border-info shadow-sm">
+              <div class="card-body">
+                <div class="d-flex justify-content-center align-items-center px-md-1">
+                  <div class="align-self-center">
+                    <i class="fas fa-trophy text-info fa-3x"></i>
+                  </div>
+                  <div class="text-end ms-3">
+                    <h3>278</h3>
+                    <p class="mb-0">Trophées Gagnés</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-12 mb-4">
+            <div class="card border-warning shadow-sm">
+              <div class="card-body">
+                <div class="d-flex justify-content-center align-items-center px-md-1">
+                  <div class="align-self-center">
+                    <i class="fas fa-calendar-alt text-warning fa-3x"></i>
+                  </div>
+                  <div class="text-end ms-3">
+                    <h3>156</h3>
+                    <p class="mb-0">Matchs Planifiés</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-12 mb-4">
+            <div class="card border-success shadow-sm">
+              <div class="card-body">
+                <div class="d-flex justify-content-center align-items-center px-md-1">
+                  <div class="align-self-center">
+                    <i class="fas fa-running text-success fa-3x"></i>
+                  </div>
+                  <div class="text-end ms-3">
+                    <h3>64.89 %</h3>
+                    <p class="mb-0">Entraînements Complétés</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-12 mb-4">
+            <div class="card border-danger shadow-sm">
+              <div class="card-body">
+                <div class="d-flex justify-content-center align-items-center px-md-1">
+                  <div class="align-self-center">
+                    <i class="fas fa-map-marker-alt text-danger fa-3x"></i>
+                  </div>
+                  <div class="text-end ms-3">
+                    <h3>423</h3>
+                    <p class="mb-0">Jours Restants Avant le Prochain Tournoi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Section: Upcoming Matches -->
+      <section class="upcoming-matches">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 mb-4">
+              <div class="card border-primary shadow-lg mx-auto" style="max-width: 80%;">
+                <div class="card-header bg-primary text-white py-4">
+                  <h5 class="mb-0"><strong>Prochains Matchs</strong></h5>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-hover table-bordered text-center">
+                      <thead class="table-dark">
+                        <tr>
+                          <th scope="col">Date</th>
+                          <th scope="col">Adversaire</th>
+                          <th scope="col">Lieu</th>
+                          <th scope="col">Heure</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>25/08/2024</td>
+                          <td>Jean Dupont</td>
+                          <td><i class="bi bi-geo-alt"></i> Stade de Tennis Central</td>
+                          <td><i class="bi bi-clock"></i> 14:00</td>
+                        </tr>
+                        <tr>
+                          <td>01/09/2024</td>
+                          <td>Marie Dubois</td>
+                          <td><i class="bi bi-geo-alt"></i> Complexe Sportif National</td>
+                          <td><i class="bi bi-clock"></i> 10:00</td>
+                        </tr>
+                        <!-- Add more match rows as needed -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <app-footer></app-footer>

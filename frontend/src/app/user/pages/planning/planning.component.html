@@ -1,0 +1,31 @@
+<!-- Calendar Component -->
+<app-calendar></app-calendar>
+
+<!-- Modal for Private Session -->
+<div *ngIf="currentModal === 'privateSessionModal'" class="modal">
+  <div class="modal-content">
+    <h2>Session Privée</h2>
+    <form>
+      <label for="date">Date:</label>
+      <input id="date" name="date" [(ngModel)]="privateSession.date" type="date" required />
+      <label for="time">Heure:</label>
+      <input id="time" name="time" [(ngModel)]="privateSession.time" type="time" required />
+      <label for="coach">Entraîneur:</label>
+      <input id="coach" name="coach" [(ngModel)]="privateSession.coach" type="text" required />
+      <button type="button" (click)="submitPrivateSession()">Soumettre</button>
+      <button type="button" (click)="closeModal()">Fermer</button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal for Tournament Participation -->
+<div *ngIf="currentModal === 'tournamentModal'" class="modal">
+  <div class="modal-content">
+    <h2>Participation au Tournoi</h2>
+    <p>Nom: {{ selectedTournament.name }}</p>
+    <p>Date: {{ selectedTournament.date }}</p>
+    <p>Lieu: {{ selectedTournament.location }}</p>
+    <button (click)="submitTournamentParticipation()">Participer</button>
+    <button (click)="closeModal()">Fermer</button>
+  </div>
+</div>

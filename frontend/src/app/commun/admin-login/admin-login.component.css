@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f2f4f7; /* light color for background */
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flex-div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.name-content {
+  margin-right: 5rem;
+}
+
+.name-content .logo {
+  font-size: 3rem; /* Slightly reduced size */
+  color: #FFD700; /* Gold color */
+}
+
+.name-content p {
+  font-size: 1.2rem; /* Slightly reduced size */
+  font-weight: 500;
+  margin-bottom: 5rem; /* Adjusted for better spacing */
+  color: #003366; /* Dark blue color */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: #fff; /* White background for form */
+  padding: 2rem;
+  width: 500px; /* Slightly reduced width */
+  height: 360px; /* Slightly reduced height */
+  border-radius: 0.5rem;
+  margin-top: 3rem; /* Added margin to separate the form from the logo and subtitle */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+  outline: none;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 1rem; /* Slightly reduced size */
+}
+
+form input:focus {
+  border: 1.8px solid #FFD700; /* Gold color for focus border */
+}
+
+form .login {
+  outline: none;
+  border: none;
+  background: #2E2E2E; /* Dark grey color */
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  font-size: 1rem; /* Slightly reduced size */
+  color: #fff; /* White text color */
+}
+
+form .login:hover {
+  background: #2E2E2E; /* Dark grey color on hover */
+  cursor: pointer;
+}
+
+form a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.9rem; /* Slightly reduced size */
+  padding-top: 0.8rem;
+  color: #003366; /* Dark blue color */
+}
+
+form hr {
+  background: #f7f7f7;
+  margin: 1rem;
+}
+
+form .create-account {
+  outline: none;
+  border: none;
+  background: #003366; /* Dark blue color */
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  font-size: 1rem; /* Slightly reduced size */
+  color: #fff; /* White text color */
+  width: 75%;
+  margin: 0 auto;
+}
+
+form .create-account:hover {
+  background: #003366; /* Dark blue color on hover */
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  html {
+    font-size: 55%; /* Slightly reduced size */
+  }
+
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  form {
+    width: 290px; /* Slightly reduced size */
+    height: fit-content;
+  }
+
+  form input {
+    margin-bottom: 1rem;
+    font-size: 1.4rem; /* Slightly reduced size */
+  }
+
+  form .login {
+    font-size: 1.4rem; /* Slightly reduced size */
+  }
+
+  form a {
+    font-size: 1.4rem; /* Slightly reduced size */
+  }
+
+  form .create-account {
+    font-size: 1.4rem; /* Slightly reduced size */
+  }
+
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  html {
+    font-size: 55%; /* Slightly reduced size */
+  }
+
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  form {
+    width: 290px; /* Slightly reduced size */
+    height: fit-content;
+  }
+
+  form input {
+    margin-bottom: 1rem;
+    font-size: 1.4rem; /* Slightly reduced size */
+  }
+
+  form .login {
+    font-size: 1.4rem; /* Slightly reduced size */
+  }
+
+  form a {
+    font-size: 1.4rem; /* Slightly reduced size */
+  }
+
+  form .create-account {
+    font-size: 1.4rem; /* Slightly reduced size */
+  }
+
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  html {
+    font-size: 55%; /* Slightly reduced size */
+  }
+
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  form {
+    width: 290px; /* Slightly reduced size */
+    height: fit-content;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow for better clarity */
+    padding: 20px; 
+    background-color: #fff; /* White background for form */
+  }
+
+  form input {
+    margin-bottom: 1rem;
+    font-size: 1.4rem; /* Slightly reduced size */
+  }
+
+  form .login {
+    font-size: 1.4rem; /* Slightly reduced size */
+  }
+
+  form a {
+    font-size: 1.4rem; /* Slightly reduced size */
+  }
+
+  form .create-account {
+    font-size: 1.4rem; /* Slightly reduced size */
+  }
+
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (orientation: landscape) and (max-height: 500px) {
+    .header {
+      height: 90vmax;
+    }
+  }  
+}
+
+.name-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  padding: 10px;
+  margin-bottom: 50px; 
+}
+
+.image-container {
+  text-align: center;
+}
+
+.name-content img {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.image-container p {
+  font-size: 1.5em;
+  color: #003366; /* Dark blue color */
+  font-weight: bold;
+  margin-top: 0;
+}

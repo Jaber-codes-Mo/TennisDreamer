@@ -1,0 +1,73 @@
+/* General container styling */
+.container {
+    padding: 40px; /* Increased padding around container */
+  }
+  
+  /* Flexbox layout for logo and form */
+  .d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items horizontally */
+    gap: 150px; /* Increased space between logo and form */
+    margin-top: 50px; /* Additional top margin to push content further down */
+  }
+  
+  /* Logo section styling */
+  .logo-section {
+    flex: 0 0 auto; /* Prevent logo from stretching */
+    text-align: center;
+  }
+  
+  .logo {
+    width: 250px; /* Medium size for visibility */
+    height: auto;
+  }
+  
+  /* Form section styling */
+  .form-section {
+    background-color: #FFD700; /* Your yellow color */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding inside the card */
+    max-width: 400px; /* Medium width for consistency */
+    width: 100%; /* Ensure responsiveness */
+  }
+  
+  /* Card header styling */
+  .card-header {
+    background-color: #003366; /* Your dark blue color */
+    color: #fff;
+    padding: 15px; /* Padding for header */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Form group styling */
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 8px; /* Spacing between label and input */
+  }
+  
+  /* Button styling */
+  .btn-primary {
+    background-color: #003366; /* Your dark blue color */
+    border: none;
+    padding: 10px 20px; /* Adjusted padding */
+  }
+  
+  .btn-secondary {
+    background-color: #2E2E2E; /* Your dark gray color */
+    border: none;
+    padding: 10px 20px; /* Adjusted padding */
+  }
+  
+  /* Link styling */
+  a {
+    color: #003366; /* Your dark blue color */
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

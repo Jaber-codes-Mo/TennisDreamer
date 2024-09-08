@@ -1,0 +1,28 @@
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+     .btn-sayi{
+        outline: none;
+        border: none;
+        background: #003366;
+        padding: 0.8rem 1rem;
+        border-radius: 0.4rem;
+        font-size: 1.1rem;
+        color: #fff;
+        display: grid;
+        justify-items: center;
+      }
+       .btn-sayi:hover {
+        background: #003366;
+        cursor: pointer;
+      }
+      .card-registration {
+        height: 100%;
+      }
+      

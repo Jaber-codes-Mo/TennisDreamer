@@ -1,0 +1,11 @@
+/* Pied de page */
+footer {
+    background-color: #003366; /* Bleu foncé */
+    color: #FFD700; /* Or */
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}

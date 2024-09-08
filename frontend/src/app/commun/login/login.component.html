@@ -1,0 +1,23 @@
+<!-- login.component.html -->
+<body>
+    <div class="content">
+      <div class="flex-div">
+        <div class="name-content">
+          <div class="image-container">
+            <img src="assets/dream.png" alt="TennisDreamer Logo">
+            <p>Réalisez vos ambitions et brillez sur le court</p>
+          </div>
+        </div>
+        
+        <form>
+          <input type="text" placeholder="Email ou numéro de téléphone" required />
+          <input type="password" placeholder="mot de passe" required>
+          <button class="login" (click)="navigateToAcademie()">Se Connecter</button>
+          <a href="#" class="alerte" (click)="navigateToAlerte($event)">Mot de passe oublié ?</a>
+          <hr>
+          <button class="create-account" (click)="navigateToInscrit()">Créer nouveau compte</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  

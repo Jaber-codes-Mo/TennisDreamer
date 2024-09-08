@@ -1,0 +1,17 @@
+/* Styles CSS du composant Reservation */
+#reservations {
+    background-color: #f8f9fa;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.modal-footer {
+    background-color: #f8f9fa;
+}
